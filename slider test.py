@@ -37,9 +37,12 @@ textbox_b = TextBox(app, text = "0")
 textbox_hex=TextBox(app)
 
 slider_r = Slider(app,  end = 255, command = slider_changed_r)
+slider_r.width = 300
 slider_g = Slider(app, end = 255,   command = slider_changed_g)
+slider_g.width = 300
 slider_b = Slider(app, end = 255,  command = slider_changed_b)
+slider_b.width = 300
 
 
-
+app.bg = ("black")
 app.display()
