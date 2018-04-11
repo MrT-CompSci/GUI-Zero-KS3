@@ -3,15 +3,11 @@ from guizero import App, TextBox, PushButton, Text, Picture, Slider, alerts
 def clamp(x): 
   return max(0, min(x, 255))
 
-
-
 def slider_changed_r(slider_value):
     textbox_r.text_color = "red"
     textbox_r.value = slider_value
     color_change()
     
-    
-
 def slider_changed_g(slider_value):
     textbox_g.text_color = "green"
     textbox_g.value = slider_value
@@ -28,7 +24,7 @@ def color_change():
 
 app = App()
 
-text = Text(app, text="Colour Mixer")
+#text = Text(app, text="Colour Mixer")
 
 textbox_r = TextBox(app, text = "0")
 textbox_g = TextBox(app, text = "0")
