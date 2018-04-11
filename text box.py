@@ -17,6 +17,6 @@ textbox.update_command(key_pressed)
 
 picture =Picture(app, image="hal.png")
 
-button = PushButton(app, text="Open the pod bay doors please", command=start)
+button = PushButton(app, text="Open the pod bay doors please.", command=start)
 
 app.display()
